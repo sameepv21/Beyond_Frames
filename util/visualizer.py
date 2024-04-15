@@ -10,10 +10,9 @@ import cv2
 from PIL import Image
 from networkx.drawing import nx_agraph, nx_pydot
 
-from roadscene2vec.scene_graph.scene_graph import SceneGraph
-from roadscene2vec.scene_graph.extraction.image_extractor import RealExtractor
-from roadscene2vec.scene_graph.extraction.carla_extractor import CarlaExtractor
-from roadscene2vec.data.dataset import RawImageDataset
+from scene_graph.scene_graph import SceneGraph
+from scene_graph.image_extractor import RealExtractor
+from util.dataset import RawImageDataset
 import matplotlib
 import matplotlib.pyplot as plt
 # matplotlib.use('TkAgg')
@@ -39,8 +38,8 @@ def elapsed_time(func, *args, **kwargs):
 def get_extractor(config):
   return RealExtractor(config)
   
-def get_carla_extractor(config):
-  return CarlaExtractor(config)
+# def get_carla_extractor(config):
+#   return CarlaExtractor(config)
 
 def get_data(extractor):
   temp = RawImageDataset()
@@ -166,8 +165,8 @@ def draw_carla(sg, image = None, save_path = None):
 def visualize(extraction_config):
   if extraction_config.dataset_type == "image":
     visualize_real_image(extraction_config)
-  elif extraction_config.dataset_type == "carla":
-    visualize_carla(extraction_config)
+  # elif extraction_config.dataset_type == "carla":
+  #   visualize_carla(extraction_config)
   else:
     raise ValueError("Extraction dataset type not recognized")
 
@@ -189,48 +188,48 @@ def visualize_real_image(extraction_config):
   print('- finished')
   
   
-def visualize_carla(extraction_config):
-  extractor = get_carla_extractor(extraction_config)
-  dataset_dir = extractor.conf.location_data["input_path"]
-  if not os.path.exists(dataset_dir):
-      raise FileNotFoundError(dataset_dir)
-  all_sequence_dirs = [x for x in Path(dataset_dir).iterdir() if x.is_dir()]
-  all_sequence_dirs = sorted(all_sequence_dirs, key=lambda x: int(x.stem.split('_')[0])) 
-  for path in tqdm(all_sequence_dirs):
-    txt_path = sorted(list(glob("%s/**/*.json" % str(path/"scene_raw"), recursive=True)))[0]
-    raw_images_path = Path(path/"raw_images")
-    raw_image_names = [str(i) for i in raw_images_path.iterdir() if i.is_file()]
-    with open(txt_path, 'r') as scene_dict_f:
-        try:
-            framedict = json.loads(scene_dict_f.read()) 
-            image_frames = list(framedict.keys()) #this is the list of frame names
-            image_frames = sorted(image_frames)
-            #### filling the gap between lane change where some of ego node might miss the invading lane information. ####
-            start_frame_number = 0; end_frame_number = 0; invading_lane_idx = None
+# def visualize_carla(extraction_config):
+#   extractor = get_carla_extractor(extraction_config)
+#   dataset_dir = extractor.conf.location_data["input_path"]
+#   if not os.path.exists(dataset_dir):
+#       raise FileNotFoundError(dataset_dir)
+#   all_sequence_dirs = [x for x in Path(dataset_dir).iterdir() if x.is_dir()]
+#   all_sequence_dirs = sorted(all_sequence_dirs, key=lambda x: int(x.stem.split('_')[0])) 
+#   for path in tqdm(all_sequence_dirs):
+#     txt_path = sorted(list(glob("%s/**/*.json" % str(path/"scene_raw"), recursive=True)))[0]
+#     raw_images_path = Path(path/"raw_images")
+#     raw_image_names = [str(i) for i in raw_images_path.iterdir() if i.is_file()]
+#     with open(txt_path, 'r') as scene_dict_f:
+#         try:
+#             framedict = json.loads(scene_dict_f.read()) 
+#             image_frames = list(framedict.keys()) #this is the list of frame names
+#             image_frames = sorted(image_frames)
+#             #### filling the gap between lane change where some of ego node might miss the invading lane information. ####
+#             start_frame_number = 0; end_frame_number = 0; invading_lane_idx = None
             
-            for idx, frame_number in enumerate(image_frames):
-                if "invading_lane" in framedict[str(frame_number)]['ego']:
-                    start_frame_number = idx
-                    invading_lane_idx = framedict[str(frame_number)]['ego']['invading_lane']
-                    break
+#             for idx, frame_number in enumerate(image_frames):
+#                 if "invading_lane" in framedict[str(frame_number)]['ego']:
+#                     start_frame_number = idx
+#                     invading_lane_idx = framedict[str(frame_number)]['ego']['invading_lane']
+#                     break
   
-            for frame_number in image_frames[::-1]:
-                if "invading_lane" in framedict[str(frame_number)]['ego']:
-                    end_frame_number = image_frames.index(frame_number)
-                    break
+#             for frame_number in image_frames[::-1]:
+#                 if "invading_lane" in framedict[str(frame_number)]['ego']:
+#                     end_frame_number = image_frames.index(frame_number)
+#                     break
         
-            for idx in range(start_frame_number, end_frame_number):
-                framedict[str(image_frames[idx])]['ego']['invading_lane'] = invading_lane_idx
+#             for idx in range(start_frame_number, end_frame_number):
+#                 framedict[str(image_frames[idx])]['ego']['invading_lane'] = invading_lane_idx
             
-            for frame, frame_dict in framedict.items():
-                if str(frame) in image_frames: 
-                    sg = get_carla_scenegraph(extractor, frame_dict, frame)
-                    image_file = [image_name for image_name in raw_image_names if str(frame) in image_name] #some frames do not have corresponding simulation images
-                    if len(image_file) > 0:
-                      image = Path(raw_images_path/image_file[0])
-                    else:
-                      image = None
-                    draw_carla(sg, image, save_path='output.png')
-        except:
-          print("Issue visualizing carla scenegraphs")
-  print('- finished')
+#             for frame, frame_dict in framedict.items():
+#                 if str(frame) in image_frames: 
+#                     sg = get_carla_scenegraph(extractor, frame_dict, frame)
+#                     image_file = [image_name for image_name in raw_image_names if str(frame) in image_name] #some frames do not have corresponding simulation images
+#                     if len(image_file) > 0:
+#                       image = Path(raw_images_path/image_file[0])
+#                     else:
+#                       image = None
+#                     draw_carla(sg, image, save_path='output.png')
+#         except:
+#           print("Issue visualizing carla scenegraphs")
+#   print('- finished')
