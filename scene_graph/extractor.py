@@ -1,5 +1,5 @@
 from abc import ABC
-import relation_extractor as r_e
+from .relation_extractor import RelationExtractor
 
 
 '''
@@ -10,6 +10,6 @@ class Extractor(ABC):
         self.conf = config
         self.dataset_type = self.conf.dataset_type
         self.scene_graphs = {}
-        self.relation_extractor = r_e.RelationExtractor(config)
+        self.relation_extractor = RelationExtractor(config)
         self.framenum = self.conf.relation_extraction_settings["frames_limit"]
         

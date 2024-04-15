@@ -1,5 +1,6 @@
 class Node:
     def __init__(self, name, attr, label=None, value = None):
+        print("Node has been called")
         self.name = name  # Car-1, Car-2.
         self.attr = attr  # bounding box info
         self.label = label  # ActorType (ie "car")

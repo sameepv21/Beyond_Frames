@@ -1,8 +1,8 @@
 ---
 dataset_type: 'image' #Type of data from which to extract scenegraphs from. Options: 'image', 'carla'
 location_data:
-    input_path: '/data/courses/2024/class_cse59836295spring2024_rsenana1/group2/sameep/roadscene2vec/dataset' #REPLACE WITH PATH TO DOWNLOADED DATASET. input path to main directory containing driving sequence subdirectories from which to extract scenegraphs
-    data_save_path: '/data/courses/2024/class_cse59836295spring2024_rsenana1/group2/sameep/roadscene2vec/pickle_dump/scenegraph_dataset.pkl' #path to save extracted scenegraph dataset
+    input_path: '/home/sameep/Extra_Projects/Beyond_Frames/dataset' #REPLACE WITH PATH TO DOWNLOADED DATASET. input path to main directory containing driving sequence subdirectories from which to extract scenegraphs
+    data_save_path: '/home/sameep/Extra_Projects/Beyond_Frames/pickle_dump/scenegraph_dataset.pkl' #path to save extracted scenegraph dataset
 
 relation_extraction_settings:
   frames_limit: null #extract scenegraphs for 1 frame every n frames per sequence subdirectory. currently only functional for image based extraction. Options: null(None), Integer n

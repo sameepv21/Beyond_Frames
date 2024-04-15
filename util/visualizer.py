@@ -12,7 +12,7 @@ from networkx.drawing import nx_agraph, nx_pydot
 
 from scene_graph.scene_graph import SceneGraph
 from scene_graph.image_extractor import RealExtractor
-from util.dataset import RawImageDataset
+from .dataset import RawImageDataset
 import matplotlib
 import matplotlib.pyplot as plt
 # matplotlib.use('TkAgg')

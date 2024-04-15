@@ -13,7 +13,7 @@ from detectron2.data import MetadataCatalog
 from detectron2.utils import visualizer 
 from detectron2.config import get_cfg
 from detectron2 import model_zoo
-from util.bev import bev
+from .bev import bev
 from tqdm import tqdm
 
 '''RealExtractor initializes relational settings and creates an ImageSceneGraphSequenceGenerator object to extract scene graphs using raw image data.'''

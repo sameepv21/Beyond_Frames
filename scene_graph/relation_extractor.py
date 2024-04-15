@@ -1,6 +1,6 @@
 import math
 import itertools
-from nodes import Node
+from .nodes import Node
 
 
 class RelationExtractor:

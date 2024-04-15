@@ -2,7 +2,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import networkx as nx
-from nodes import Node
+from .nodes import Node
 from networkx.drawing import nx_pydot
 import pandas as pd
 import torch
