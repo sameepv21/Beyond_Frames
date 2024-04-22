@@ -1,0 +1,724 @@
+{
+    "32435_18": {
+        "width": 1920,
+        "height": 1080,
+        "objects": {
+            "6811": {
+                "name": "car",
+                "x": 1407.5440673828125,
+                "y": 772.3269653320312,
+                "h": 42.6290283203125,
+                "w": 84.527099609375,
+                "attributes": [
+                    19.819431371186294,
+                    3603.3081230819225
+                ],
+                "relations": [
+                    {
+                        "object": "4502",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "near_coll"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "near"
+                    },
+                    {
+                        "object": "709",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "near"
+                    },
+                    {
+                        "object": "524",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "toRightOf"
+                    }
+                ]
+            },
+            "4502": {
+                "name": "car",
+                "x": 3.6338233947753906,
+                "y": 673.2547607421875,
+                "h": 342.21710205078125,
+                "w": 377.1509666442871,
+                "attributes": [
+                    16.475144276080425,
+                    129067.5108406588
+                ],
+                "relations": [
+                    {
+                        "object": "6811",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "very_near"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "near"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "near"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "toLeftOf"
+                    }
+                ]
+            },
+            "5806": {
+                "name": "car",
+                "x": 647.4768676757812,
+                "y": 740.9530639648438,
+                "h": 203.17169189453125,
+                "w": 268.958984375,
+                "attributes": [
+                    16.064620100498967,
+                    54644.851905703545
+                ],
+                "relations": [
+                    {
+                        "object": "6811",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "very_near"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "atSRearOf"
+                    }
+                ]
+            },
+            "9280": {
+                "name": "car",
+                "x": 1485.3035888671875,
+                "y": 768.4482421875,
+                "h": 40.461669921875,
+                "w": 75.0130615234375,
+                "attributes": [
+                    20.61962343927821,
+                    3035.15373519063
+                ],
+                "relations": [
+                    {
+                        "object": "6811",
+                        "name": "near_coll"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "near_coll"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "near"
+                    },
+                    {
+                        "object": "709",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "near"
+                    },
+                    {
+                        "object": "524",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "toRightOf"
+                    }
+                ]
+            },
+            "6834": {
+                "name": "car",
+                "x": 1553.968505859375,
+                "y": 754.4483032226562,
+                "h": 47.68084716796875,
+                "w": 78.9510498046875,
+                "attributes": [
+                    21.505666134397398,
+                    3764.4529394879937
+                ],
+                "relations": [
+                    {
+                        "object": "6811",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "near_coll"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "709",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "near"
+                    },
+                    {
+                        "object": "524",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "toRightOf"
+                    }
+                ]
+            },
+            "837": {
+                "name": "ped",
+                "x": 1247.5018310546875,
+                "y": 777.3038330078125,
+                "h": 46.67852783203125,
+                "w": 28.3330078125,
+                "attributes": [
+                    18.223212130827296,
+                    1322.54309374094
+                ],
+                "relations": [
+                    {
+                        "object": "709",
+                        "name": "very_near"
+                    },
+                    {
+                        "object": "709",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "524",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    }
+                ]
+            },
+            "709": {
+                "name": "car",
+                "x": 889.2600708007812,
+                "y": 764.8257446289062,
+                "h": 43.650146484375,
+                "w": 39.159423828125,
+                "attributes": [
+                    16.483739315473553,
+                    1709.314586341381
+                ],
+                "relations": [
+                    {
+                        "object": "6811",
+                        "name": "near"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "near"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "near"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "visible"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "837",
+                        "name": "very_near"
+                    },
+                    {
+                        "object": "837",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "837",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "near_coll"
+                    },
+                    {
+                        "object": "524",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "524",
+                        "name": "atSRearOf"
+                    }
+                ]
+            },
+            "524": {
+                "name": "car",
+                "x": 997.6114501953125,
+                "y": 734.7498168945312,
+                "h": 150.6844482421875,
+                "w": 129.400146484375,
+                "attributes": [
+                    16.75163653306523,
+                    19498.589675456285
+                ],
+                "relations": [
+                    {
+                        "object": "6811",
+                        "name": "near"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6811",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "near"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "4502",
+                        "name": "toRightOf"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "5806",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "near"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "9280",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "near"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "6834",
+                        "name": "toLeftOf"
+                    },
+                    {
+                        "object": "837",
+                        "name": "super_near"
+                    },
+                    {
+                        "object": "837",
+                        "name": "inSFrontOf"
+                    },
+                    {
+                        "object": "837",
+                        "name": "atSRearOf"
+                    },
+                    {
+                        "object": "709",
+                        "name": "near_coll"
+                    },
+                    {
+                        "object": "709",
+                        "name": "isIn"
+                    },
+                    {
+                        "object": "709",
+                        "name": "inSFrontOf"
+                    }
+                ]
+            },
+            "4283": {
+                "name": "ped",
+                "x": 1233.21044921875,
+                "y": 778.859619140625,
+                "h": 45.36773681640625,
+                "w": 35.0655517578125,
+                "attributes": [
+                    18.147183397956017,
+                    1590.844723470509
+                ],
+                "relations": []
+            }
+        }
+    }
+}
