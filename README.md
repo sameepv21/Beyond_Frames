@@ -8,7 +8,15 @@ The current state-of-the-art techniques generally include using transformer and 
 
 The main aim of the paper is to apply various graph based methods / models to the domain of traffic cognition to aid in the direction of interpreting traffic-related information in using graph based methods including and is not limited to graph neural networks or scene graphs or knowledge graphs based reasoning. The objective of this is to achieve real-time SOTA performance with lower computational cost. To the best of our knowledge, this is the first time anyone has applied graph based methods to traffic analysis.
 
+# Example
+![example](./example_scene_graph.png)
+
 # Architecture
-> Overview
+> Architecture Overview
+![overview_architecture](./Overview.png)
+
 > Scene Graph
+![sgg_architecture](./SceneGraphGenerator.png)
+
 > Graph VQA
+![graph_vqa_architecture](./GraphVQA.png)
